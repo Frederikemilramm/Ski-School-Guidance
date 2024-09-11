@@ -39,7 +39,7 @@ export default function Home() {
       <section id="home" className={styles.hero}>
         <video autoPlay muted loop className={styles.bgVideo}>
           <source
-            src="190404_04_KaninBovec_Drone_003.mp4"
+            src="/190404_04_KaninBovec_Drone_003.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
