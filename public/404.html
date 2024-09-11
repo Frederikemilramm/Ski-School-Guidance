@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 650px;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            font-size: 80px;
+            font-weight: 700;
+            color: #ff5733;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff5733;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        a:hover {
+            background-color: #ff6f47;
+            transform: scale(1.05);
+        }
+        .gif-container {
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .fun-text {
+            font-size: 22px;
+            color: #ff5733;
+            margin-top: 20px;
+            font-weight: 600;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>404</h1>
+        <div class="gif-container">
+            <img src=/images/bear-wave.gif  <!-- Correcting GIF path -->
+        </div>
+        <p>Oops! The page you are looking for doesn't exist.</p>
+        <p class="fun-text">"I have no idea who you are!"</p> <!-- Adding the fun quote -->
+        <a href="index.html">Go Back Home</a>
+    </div>
+
+</body>
+</html>

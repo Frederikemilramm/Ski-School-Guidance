@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 96%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(30px);
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    background-color: #ff5733;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('pexels-mati-3193846.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* About Content Section */
+.content {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: #ff5733;
+    margin: 20px auto;
+}
+
+.mission-box {
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-left: 5px solid #ff5733;
+    margin-top: 40px;
+}
+
+.mission-box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mission-box p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}

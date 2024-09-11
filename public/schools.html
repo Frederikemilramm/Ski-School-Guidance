@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski School Guidance</title>
+    <link rel="stylesheet" href="schools.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Ski School Guidance</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schools.html">Schools</a>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar and Filter Section -->
+    <section id="search-filter-bar">
+        <div class="container">
+            <input type="text" id="search-input" placeholder="Search for ski schools..." onkeyup="searchArticles()">
+            <div id="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="france">France</button>
+                <button class="filter-btn" data-filter="austria">Austria</button>
+                <button class="filter-btn" data-filter="norway">Norway</button>
+                <button class="filter-btn" data-filter="sweden">Sweden</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles">
+        
+        <div class="container">
+            <div id="country-sections">
+                <!-- France -->
+                <section class="country-section" id="france">
+                    <h2>Best Ski Schools in France</h2>
+                    <div class="article-list">
+                        <div class="article-item" data-category="france">
+                            <a href="articles/france-alps.html">
+                                <img data-src="images/france-alps.jpg" alt="Alps Ski School">
+                                <h3>Alps Ski School: Master the Slopes</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="france">
+                            <a href="articles/france-chamonix.html">
+                                <img data-src="images/france-chamonix.jpg" alt="Chamonix Experience">
+                                <h3>Chamonix Experience: Elite Training</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="france">
+                            <a href="articles/france-val-thorens.html">
+                                <img data-src="images/france-val-thorens.jpg" alt="Val Thorens Adventure">
+                                <h3>Val Thorens Adventure: Ski and Beyond</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Austria -->
+                <section class="country-section" id="austria">
+                    <h2>Best Ski Schools in Austria</h2>
+                    <div class="article-list">
+                        <div class="article-item" data-category="austria">
+                            <a href="articles/austria-st-anton.html">
+                                <img data-src="images/austria-st-anton.jpg" alt="St. Anton Ski School">
+                                <h3>St. Anton Ski School: The Heart of the Alps</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="austria">
+                            <a href="articles/austria-kitzbuhel.html">
+                                <img data-src="images/austria-kitzbuhel.jpg" alt="Kitzbühel Ski Excellence">
+                                <h3>Kitzbühel Ski Excellence: A Legendary Experience</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="austria">
+                            <a href="articles/austria-ischgl.html">
+                                <img data-src="images/austria-ischgl.jpg" alt="Ischgl Ski School">
+                                <h3>Ischgl Ski School: Learn and Explore</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Norway -->
+                <section class="country-section" id="norway">
+                    <h2>Best Ski Schools in Norway</h2>
+                    <div class="article-list">
+                        <div class="article-item" data-category="norway">
+                            <a href="articles/norway-hemsedal.html">
+                                <img data-src="images/norway-hemsedal.jpg" alt="Hemsedal Ski School">
+                                <h3>Hemsedal Ski School: Norway’s Finest</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="norway">
+                            <a href="articles/norway-trysil.html">
+                                <img data-src="images/norway-trysil.jpg" alt="Trysil Ski Academy">
+                                <h3>Trysil Ski Academy: Conquer the Snow</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="norway">
+                            <a href="articles/norway-voss.html">
+                                <img data-src="images/norway-voss.jpg" alt="Voss Winter Experience">
+                                <h3>Voss Winter Experience: Skiing in the Fjords</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sweden -->
+                <section class="country-section" id="sweden">
+                    <h2>Best Ski Schools in Sweden</h2>
+                    <div class="article-list">
+                        <div class="article-item" data-category="sweden">
+                            <a href="articles/sweden-are.html">
+                                <img data-src="images/sweden-are.jpg" alt="Åre Ski School">
+                                <h3>Åre Ski School: Adventure in the Arctic Circle</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="sweden">
+                            <a href="articles/sweden-salen.html">
+                                <img data-src="images/sweden-salen.jpg" alt="Sälen Ski School">
+                                <h3>Sälen Ski School: Learn in Sweden's Largest Resort</h3>
+                            </a>
+                        </div>
+                        <div class="article-item" data-category="sweden">
+                            <a href="articles/sweden-riksgransen.html">
+                                <img data-src="images/sweden-riksgransen.jpg" alt="Riksgränsen Ski Adventure">
+                                <h3>Riksgränsen Ski Adventure: Ski Under the Midnight Sun</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ski School Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
