@@ -3,129 +3,79 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ski School Guidance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header className={styles.header}>
+        <div className={styles.logo}>Ski School Guidance</div>
+        <nav>
+          <ul className={styles.navList}>
+            <li>
+              <a href="#home" className={styles.navLink}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/schools" className={styles.navLink}>
+                Schools
+              </a>
+            </li>
+            <li>
+              <a href="/about" className={styles.navLink}>
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+      <section id="home" className={styles.hero}>
+        <video autoPlay muted loop className={styles.bgVideo}>
+          <source
+            src="190404_04_KaninBovec_Drone_003.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div className={styles.heroContent}>
+          <h1>Find Your Perfect Ski School</h1>
+          <p>Your journey to mastering the slopes begins here.</p>
+          <a href="/schools" className={styles.btn}>
+            Discover Schools
           </a>
         </div>
-      </main>
+        <div className={styles.scrollIndicator}>
+          <span>Scroll Down</span>
+          <div className={styles.scrollArrow}></div>
+        </div>
+      </section>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+      <section id="contact" className={styles.contact}>
+        <h2>Contact Us</h2>
+        <form id="contactForm" className={styles.contactForm}>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" className={styles.btn}>
+            Submit
+          </button>
+        </form>
+        <div id="formMessage" style={{ display: 'none' }}></div>
+      </section>
+
+      <footer className={styles.footer}>
+        <p>&copy; 2024 Ski School Guidance. All rights reserved.</p>
       </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
   );
 }
